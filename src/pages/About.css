@@ -1,0 +1,76 @@
+
+.about {
+  padding: 20px;
+  text-align: center;
+}
+
+.about h1 {
+  color: darkblue;
+  font-size: 28px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+.about-text {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-text h2 {
+  color: green;
+  text-align: center;
+}
+
+.about-text h3 {
+  color: purple;
+  margin-top: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-text ul {
+  list-style-type: square;
+  margin: 10px 0;
+}
+
+.about-text li {
+  margin: 5px 0;
+}
+
+.resume-section {
+  background-color: lightgray;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.resume-section h3 {
+  color: darkgreen;
+  margin-top: 0;
+}
+
+.resume-link {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.resume-link:hover {
+  background-color: darkblue;
+}

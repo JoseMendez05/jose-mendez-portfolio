@@ -1,0 +1,65 @@
+/* Simple navbar styles - beginner friendly! */
+.navbar {
+  background-color: darkblue;
+  padding: 10px 0;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  color: lightblue;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+/* Simple mobile view */
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

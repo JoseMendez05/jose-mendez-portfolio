@@ -1,0 +1,74 @@
+
+.projects {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects h1 {
+  color: darkgreen;
+  text-align: center;
+}
+
+.project-list {
+  margin: 30px 0;
+}
+
+.project {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 2px solid blue;
+}
+
+.project h3 {
+  color: darkblue;
+  margin-top: 0;
+}
+
+.project p {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.project strong {
+  color: darkred;
+}
+
+.future-projects {
+  background-color: lightyellow;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid orange;
+  margin: 30px 0;
+}
+
+.future-projects h2 {
+  color: darkorange;
+  margin-top: 0;
+}
+
+.future-projects ul {
+  margin: 15px 0;
+}
+
+.future-projects li {
+  margin: 8px 0;
+  list-style-type: circle;
+}
+
+.honest-note {
+  background-color: lightgreen;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid green;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.honest-note em {
+  color: darkgreen;
+  font-size: 16px;
+}

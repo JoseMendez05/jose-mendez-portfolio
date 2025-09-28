@@ -1,0 +1,50 @@
+
+.home {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.home h1 {
+  color: blue;
+  text-align: center;
+  font-size: 32px;
+}
+
+.home p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.about-me {
+  background-color: lightgray;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.about-me h2 {
+  color: darkblue;
+}
+
+.navigation-links {
+  margin-top: 30px;
+}
+
+.navigation-links h2 {
+  color: green;
+}
+
+.navigation-links a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: lightblue;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.navigation-links a:hover {
+  background-color: blue;
+  color: white;
+}
