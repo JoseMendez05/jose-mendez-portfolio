@@ -21,8 +21,8 @@ export async function signIn(req, res) {
     const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "1h" });
 
     // return token and user info (omit password)
-    const userObj = { id: user._id, name: user.name, email: user.email, created: user.created, updated: user.updated };
-    res.json({ token, user: userObj });
+  const userObj = { id: user._id, name: user.name, email: user.email, role: user.role, created: user.created, updated: user.updated };
+  res.json({ token, user: userObj });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

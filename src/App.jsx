@@ -6,6 +6,8 @@ import Projects from './pages/Projects';
 import Education from './pages/Education';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import Signin from './pages/Signin';
+import Signup from './pages/Signup';
 import './App.css'
 
 /**
@@ -29,6 +31,8 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </main>
       </div>

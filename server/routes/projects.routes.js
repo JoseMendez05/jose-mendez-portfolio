@@ -7,15 +7,16 @@ import {
   deleteProject,
   deleteAllProjects,
 } from "../controllers/project.controller.js";
-import { authenticate } from "../middleware/auth.middleware.js";
+import { authenticate, authorizeRoles } from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
 router.get("/", getAllProjects);
 router.get("/:id", getProjectById);
-router.post("/", authenticate, createProject);
-router.put("/:id", authenticate, updateProject);
-router.delete("/:id", authenticate, deleteProject);
-router.delete("/", authenticate, deleteAllProjects);
+// write operations restricted to admin
+router.post("/", authenticate, authorizeRoles("admin"), createProject);
+router.put("/:id", authenticate, authorizeRoles("admin"), updateProject);
+router.delete("/:id", authenticate, authorizeRoles("admin"), deleteProject);
+router.delete("/", authenticate, authorizeRoles("admin"), deleteAllProjects);
 
 export default router;

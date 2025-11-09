@@ -7,15 +7,16 @@ import {
   deleteContact,
   deleteAllContacts,
 } from "../controllers/contact.controller.js";
-import { authenticate } from "../middleware/auth.middleware.js";
+import { authenticate, authorizeRoles } from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
 router.get("/", getAllContacts);
 router.get("/:id", getContactById);
-router.post("/", authenticate, createContact);
-router.put("/:id", authenticate, updateContact);
-router.delete("/:id", authenticate, deleteContact);
-router.delete("/", authenticate, deleteAllContacts);
+// write operations restricted to admin
+router.post("/", authenticate, authorizeRoles("admin"), createContact);
+router.put("/:id", authenticate, authorizeRoles("admin"), updateContact);
+router.delete("/:id", authenticate, authorizeRoles("admin"), deleteContact);
+router.delete("/", authenticate, authorizeRoles("admin"), deleteAllContacts);
 
 export default router;
