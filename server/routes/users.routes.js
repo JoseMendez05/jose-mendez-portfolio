@@ -7,15 +7,19 @@ import {
   deleteUser,
   deleteAllUsers,
 } from "../controllers/user.controller.js";
-import { authenticate } from "../middleware/auth.middleware.js";
+import { authenticate, authorizeRoles, authorizeSelfOrAdmin } from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
-router.get("/", authenticate, getAllUsers);
-router.get("/:id", authenticate, getUserById);
+// Only admin can list all users
+router.get("/", authenticate, authorizeRoles("admin"), getAllUsers);
+// A user can view their own profile, admin can view any
+router.get("/:id", authenticate, authorizeSelfOrAdmin("id"), getUserById);
+// Anyone can signup (create). Updates allowed for owner or admin
 router.post("/", createUser);
-router.put("/:id", authenticate, updateUser);
-router.delete("/:id", authenticate, deleteUser);
-router.delete("/", authenticate, deleteAllUsers);
+router.put("/:id", authenticate, authorizeSelfOrAdmin("id"), updateUser);
+// Only admin can delete users
+router.delete("/:id", authenticate, authorizeRoles("admin"), deleteUser);
+router.delete("/", authenticate, authorizeRoles("admin"), deleteAllUsers);
 
 export default router;

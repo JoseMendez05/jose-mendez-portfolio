@@ -4,6 +4,7 @@ import Contact from "./models/contact.model.js";
 import Project from "./models/project.model.js";
 import Education from "./models/education.model.js";
 import User from "./models/user.model.js";
+import bcrypt from "bcryptjs";
 
 async function seed() {
   try {
@@ -57,12 +58,16 @@ async function seed() {
     // Users
     const userCount = await User.countDocuments();
     if (userCount === 0) {
+      // create an admin user with hashed password
+      const salt = await bcrypt.genSalt(10);
+      const hashed = await bcrypt.hash("password123", salt);
       const u = await User.create({
         name: "Admin User",
         email: "admin@example.com",
-        password: "password123",
+        password: hashed,
+        role: "admin",
       });
-      console.log("Inserted user:", u._id.toString());
+      console.log("Inserted admin user:", u._id.toString());
     } else {
       console.log(`Users collection already has ${userCount} documents.`);
     }
