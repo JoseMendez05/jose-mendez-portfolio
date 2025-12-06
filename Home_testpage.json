@@ -1,0 +1,252 @@
+{
+    "title": "Home page",
+    "selectorAttribute": "data-test1",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 770,
+            "height": 729,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "http://localhost:5173/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "http://localhost:5173/",
+                    "title": "Your Portfolio - Full-Stack Developer"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "main a:nth-of-type(1)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/main/div/div[2]/a[1]"
+                ],
+                [
+                    "pierce/main a:nth-of-type(1)"
+                ],
+                [
+                    "aria/[role=\"main\"]",
+                    "aria/About Me[role=\"link\"]"
+                ]
+            ],
+            "offsetY": 33.199981689453125,
+            "offsetX": 126
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(1) > a"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/nav/div/ul/li[1]/a"
+                ],
+                [
+                    "pierce/li:nth-of-type(1) > a"
+                ],
+                [
+                    "aria/Home"
+                ],
+                [
+                    "text/Home"
+                ]
+            ],
+            "offsetY": 17.399999618530273,
+            "offsetX": 43.69999694824219
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "a:nth-of-type(2)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/main/div/div[2]/a[2]"
+                ],
+                [
+                    "pierce/a:nth-of-type(2)"
+                ],
+                [
+                    "aria/My Projects"
+                ],
+                [
+                    "text/My Projects"
+                ]
+            ],
+            "offsetY": 30.600006103515625,
+            "offsetX": 193
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(1) > a"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/nav/div/ul/li[1]/a"
+                ],
+                [
+                    "pierce/li:nth-of-type(1) > a"
+                ],
+                [
+                    "aria/Home"
+                ],
+                [
+                    "text/Home"
+                ]
+            ],
+            "offsetY": 27.399999618530273,
+            "offsetX": 53.69999694824219
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "a:nth-of-type(3)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/main/div/div[2]/a[3]"
+                ],
+                [
+                    "pierce/a:nth-of-type(3)"
+                ],
+                [
+                    "aria/My Education"
+                ],
+                [
+                    "text/My Education"
+                ]
+            ],
+            "offsetY": 24,
+            "offsetX": 281
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(1) > a"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/nav/div/ul/li[1]/a"
+                ],
+                [
+                    "pierce/li:nth-of-type(1) > a"
+                ],
+                [
+                    "aria/Home"
+                ],
+                [
+                    "text/Home"
+                ]
+            ],
+            "offsetY": 16.399999618530273,
+            "offsetX": 43.69999694824219
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "a:nth-of-type(4)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/main/div/div[2]/a[4]"
+                ],
+                [
+                    "pierce/a:nth-of-type(4)"
+                ],
+                [
+                    "aria/[role=\"main\"]",
+                    "aria/Services"
+                ]
+            ],
+            "offsetY": 32.39996337890625,
+            "offsetX": 208
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(1) > a"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/nav/div/ul/li[1]/a"
+                ],
+                [
+                    "pierce/li:nth-of-type(1) > a"
+                ],
+                [
+                    "aria/Home"
+                ],
+                [
+                    "text/Home"
+                ]
+            ],
+            "offsetY": 28.399999618530273,
+            "offsetX": 28.699996948242188
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "a:nth-of-type(5)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/main/div/div[2]/a[5]"
+                ],
+                [
+                    "pierce/a:nth-of-type(5)"
+                ],
+                [
+                    "aria/Contact Me"
+                ],
+                [
+                    "text/Contact Me"
+                ]
+            ],
+            "offsetY": 21.79998779296875,
+            "offsetX": 240
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(1) > a"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/nav/div/ul/li[1]/a"
+                ],
+                [
+                    "pierce/li:nth-of-type(1) > a"
+                ],
+                [
+                    "aria/Home"
+                ],
+                [
+                    "text/Home"
+                ]
+            ],
+            "offsetY": 21.399999618530273,
+            "offsetX": 35.69999694824219
+        }
+    ]
+}
