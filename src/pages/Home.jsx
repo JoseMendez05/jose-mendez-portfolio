@@ -7,6 +7,7 @@ const Home = () => {
     <div className="home">
       <h1>Hi, I'm Jose Mendez!</h1>
       <p>Welcome to my portfolio website</p>
+      <p className="update-note">This paragraph was added as part of a CI/CD demonstration — updated live.</p>
       
       <div className="about-me">
         <h2>About Me</h2>
